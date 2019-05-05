@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Killing Fields</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="icon" type="image/png" href="static/images/icon2.png">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="static/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button style="padding-top: 30px" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!-- <a href="index.html" class="navbar-brand">Killing Fields</a> -->
+               <div class="col-md-6 col-xs-6">
+                 <div class="nav-logo">
+                     <a href="index.html"><img src="static/images/icon.png" class="responsive"></a>
+                 </div>
+     					</div>
+          </div>
+
+          <div style="padding-top: 20px" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="{%if page.url == '/'%}active{% endif %}"><a href="{{ site.baseurl }}/index.html">Home</a></li>
+
+            <li class="dropdown {%if page.url == '/genocide.html' or page.url == '/backdrop.html' or page.url == '/openingup.html'%}active{% endif %}">
+            <button class="dropbtn">Genocide</button>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/backdrop.html">Backdrop</a>
+                <a href="{{ site.baseurl }}/genocide.html">Genocide</a>
+                <a href="{{ site.baseurl }}/openingup.html">Opening Up</a>
+            </div>
+            </li>
+
+            <li class="dropdown">
+            <button class="dropbtn">Aftermath</button>
+            <div class="dropdown-content">
+                <a href="educational.html">Educational</a>
+                <a href="economic.html">Economic</a>
+                <a href="cultural.html">Cultural</a>
+            </div>
+            </li>
+
+            <li class="{%if page.url == '/gallery.html'%}active{% endif %}"><a href="gallery.html">Gallery</a></li>
+
+
+          <!-- <div style="padding-top: 20px" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+          {% if site.data.directory.toc2[0] %}
+            {% for item in site.data.directory.toc2 %}
+                {% if item.subfolderitems[0] %}
+                  <ul class="nav navbar-nav navbar-right">
+                    {% for entry in item.subfolderitems %}
+                    {% if entry.subsubfolderitems[0] %}
+                    <li class="dropdown">
+                    <button class="dropbtn">{{entry.page}}</button>
+                    <div class="dropdown-content">
+                      {% for subentry in entry.subsubfolderitems %}
+                        <a href="{{ site.baseurl }}{{ subentry.url }}">{{ subentry.page }}</a>
+                      {% endfor %}
+                    </div>
+                    </li>
+                    {% else %}
+                    <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endfor %}
+          {% endif %}
+        </ul>
+      </div> -->
+  </div>
+</div>
+
+<body>
+  {{ content }}
+</body>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Neuron Studio</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2017 Your Company - Design: Tooplate</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> 512 Delicious Street, San Francisco, CA 10880</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> info@company.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="static/js/jquery.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/particles.min.js"></script>
+<script src="static/js/app.js"></script>
+<script src="static/js/jquery.parallax.js"></script>
+<script src="static/js/smoothscroll.js"></script>
+<script src="static/js/custom.js"></script>
+
+</html>

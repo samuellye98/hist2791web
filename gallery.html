@@ -1,0 +1,108 @@
+---
+layout: default
+---
+
+<!-- Home Section -->
+
+<section id="home" class="main-gallery parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Image Gallery</h1>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Gallery Section -->
+
+<section id="gallery">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h2>Day One, Year Zero</h2>
+                    <p style="text-align:justify">Cambodia was a recently decolonized state previously governed by France until 1953, when Prince Norodom Sihanouk declared independence. A military coup deposed Sihanouk and handed power to Marshal Lon Nol who was backed by pro-American associates. Officially, Sihanouk maintained a position of neutrality in the war between Vietnam and the United States, even though some supplies were given to the Vietnamese communists and the U.S. was allowed to bomb Viet Cong hideouts in Cambodia illegitimately.</p>
+                    <p style="text-align:justify">Therefore, the U.S. supported the military coup by Marshall Lon Nol to acquire access to Cambodia during the war. In the beginning, Pol Pot and the Khmer Rouge allied themselves with Marshall Lon Nol for the coup, but when power was in the hands of Lon Nol, they defected and civil war broke out. Lon Nol was fighting communists in Vietnam as external threats and the Khmer Rouge internally within Cambodian borders with limited resources. On April 17, 1975, the Khmer Rouge seized control of the country’s capital city, Phnom Penh, effectively ousting the Lon Nol government.</p>
+
+                    <p style="text-align:justify">When the Khmer Rouge marched into the capital, Phnom Penh, thousands of terrified people fled - some towards the border with Thailand, others flooded the gates of the French Embassy. The Cambodian genocide began thereafter.</p>
+
+                    <span></span>
+                    {% for m in site.data.gallery %}
+                      {% if m.type == "rise" %}
+
+
+                    <div class="gcontainer">
+                      <div class="gcontent">
+                          <div class="gcontent-overlay"></div>
+                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
+                          <div class="gcontent-details fadeIn-bottom">
+                            <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
+                            <p class="gcontent-text">{{m.desc}}</p>
+                            <h7>Source: {{m.source}}</h7>
+                          </div>
+                      </div>
+                    </div>
+                      {% endif %}
+                    {% endfor %}
+
+
+                    <!-- <div class="col-md-12 col-sm-12">
+                         <p>Aliquam blandit velit nisi, sed fringilla felis lacinia sed. Integer vitae porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus non tristique lacus.</p>
+                    </div> -->
+               </div>
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h2>The Killing Fields</h2>
+                    <p style="text-align:justify">Adults were forced to dig their own graves before they were slaughtered with spades and sharpened bamboo. Their children, meanwhile, were smashed to death against the trunks of trees and thrown into the mass graves where their parents lay. There were more than 150 of these killing fields across the country. One of the most brutal, Tuol Sleng, was a former school that transformed into a factory of death. About 20,000 people ended up locked inside of its walls – and only seven got out alive.</p>
+                    <p style="text-align:justify">Over just four years, from 1975 to 1979, the Khmer Rouge regime exterminated approximately 3 million people. By the end of the genocide, almost 25% of the population had been killed.</p>
+                    <span></span>
+                    {% for m in site.data.gallery %}
+                      {% if m.type == "kill" %}
+
+                    <div class="gcontainer">
+                      <div class="gcontent">
+                          <div class="gcontent-overlay"></div>
+                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
+                          <div class="gcontent-details fadeIn-bottom">
+                            <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
+                            <p class="gcontent-text">{{m.desc}}</p>
+                            <h7>Source: {{m.source}}</h7>
+                          </div>
+                      </div>
+                    </div>
+                      {% endif %}
+                    {% endfor %}
+
+               </div>
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h2>Healing</h2>
+                    <p style="text-align:justify">Adults were forced to dig their own graves before they were slaughtered with spades and sharpened bamboo. Their children, meanwhile, were smashed to death against the trunks of trees and thrown into the mass graves where their parents lay. There were more than 150 of these killing fields across the country. One of the most brutal, Tuol Sleng, was a former school that transformed into a factory of death. About 20,000 people ended up locked inside of its walls – and only seven got out alive.</p>
+                    <p style="text-align:justify">Over just four years, from 1975 to 1979, the Khmer Rouge regime exterminated approximately 3 million people. By the end of the genocide, almost 25% of the population had been killed.</p>
+                    <span></span>
+                    {% for m in site.data.gallery %}
+                      {% if m.type == "open" %}
+
+                    <div class="gcontainer">
+                      <div class="gcontent">
+                          <div class="gcontent-overlay"></div>
+                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
+                          <div class="gcontent-details fadeIn-bottom">
+                            <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
+                            <p class="gcontent-text">{{m.desc}}</p>
+                            <h7>Source: {{m.source}}</h7>
+                          </div>
+                      </div>
+                    </div>
+                      {% endif %}
+                    {% endfor %}
+
+               </div>
+
+          </div>
+     </div>
+</section>
