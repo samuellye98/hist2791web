@@ -326,7 +326,7 @@ a:hover, a:active, a:focus {
 
 .main-home {
   background: url('../images/index.jpg') no-repeat;
-  height: 100vh;
+  height: 80vh;
 }
 
 .main-about {
@@ -335,32 +335,32 @@ a:hover, a:active, a:focus {
 
 .main-backdrop {
   background: url('../images/backdrop.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-genocide {
   background: url('../images/genocide.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-opening {
   background: url('../images/open.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-education {
   background: url('../images/ed.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-economic {
   background: url('../images/economic.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-cultural {
   background: url('../images/cultural.jpg') no-repeat;
-	  height: 80vh;
+	  height: 60vh;
 }
 
 .main-gallery {
@@ -532,6 +532,7 @@ a:hover, a:active, a:focus {
   bottom: 0;
   right: 0;
   opacity: 0;
+	pointer-events: none;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;

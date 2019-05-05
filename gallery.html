@@ -36,9 +36,11 @@ layout: default
 
 
                     <div class="gcontainer">
-                      <div class="gcontent">
+                      <div class="gcontent gallery-thumb">
+                          <a href="static/images/gallery/{{m.img}}" class="gcontent-image image-popup">
+                               <img src="static/images/gallery/{{m.img}}" class="img-responsive" alt="Gallery Image">
+                          </a>
                           <div class="gcontent-overlay"></div>
-                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
                           <div class="gcontent-details fadeIn-bottom">
                             <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
                             <p class="gcontent-text">{{m.desc}}</p>
@@ -64,9 +66,11 @@ layout: default
                       {% if m.type == "kill" %}
 
                     <div class="gcontainer">
-                      <div class="gcontent">
+                      <div class="gcontent gallery-thumb">
+                          <a href="static/images/gallery/{{m.img}}" class="gcontent-image image-popup">
+                               <img src="static/images/gallery/{{m.img}}" class="img-responsive" alt="Gallery Image">
+                          </a>
                           <div class="gcontent-overlay"></div>
-                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
                           <div class="gcontent-details fadeIn-bottom">
                             <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
                             <p class="gcontent-text">{{m.desc}}</p>
@@ -81,16 +85,18 @@ layout: default
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <h2>Healing</h2>
-                    <p style="text-align:justify">Adults were forced to dig their own graves before they were slaughtered with spades and sharpened bamboo. Their children, meanwhile, were smashed to death against the trunks of trees and thrown into the mass graves where their parents lay. There were more than 150 of these killing fields across the country. One of the most brutal, Tuol Sleng, was a former school that transformed into a factory of death. About 20,000 people ended up locked inside of its walls – and only seven got out alive.</p>
-                    <p style="text-align:justify">Over just four years, from 1975 to 1979, the Khmer Rouge regime exterminated approximately 3 million people. By the end of the genocide, almost 25% of the population had been killed.</p>
+                    <p style="text-align:justify">“No peace without justice”. Unfortunately, despite leading some of the most horrific killings and one of the worst mass killings of the 20th century, only 3 Khmer Rouge leaders were ever sentenced. In August 2014, Nuon Chea - considered Brother Number 2 to Pol Pot - and the regime's head of state Khieu Samphan were jailed for life for crimes against humanity. These were the only convictions for genocide after the whole ordeal. Pol Pot, leader of the Khmer Rouge party was sentenced to house arrest in 1997 and died a year later, denying millions of those who suffered under his regime the chance to gain any justice. </p>
+                    <p style="text-align:justify">All that was held in 1997 was a show trial in which former comrades of Pol Pot denounced him. Many of the other higher echelon leaders retreated into the countryside after the Vietnamese invasion and were unfortunately, gradually forgotten.</p>
                     <span></span>
                     {% for m in site.data.gallery %}
                       {% if m.type == "open" %}
 
                     <div class="gcontainer">
-                      <div class="gcontent">
+                      <div class="gcontent gallery-thumb">
+                          <a href="static/images/gallery/{{m.img}}" class="gcontent-image image-popup">
+                               <img src="static/images/gallery/{{m.img}}" class="img-responsive" alt="Gallery Image">
+                          </a>
                           <div class="gcontent-overlay"></div>
-                          <img class="gcontent-image" src="static/images/gallery/{{m.img}}">
                           <div class="gcontent-details fadeIn-bottom">
                             <!-- <h3 class="gcontent-title">{{m.title}}</h3> -->
                             <p class="gcontent-text">{{m.desc}}</p>
