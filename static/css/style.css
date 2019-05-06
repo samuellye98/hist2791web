@@ -59,6 +59,8 @@ p {
     font-weight: 300;
     line-height: 26px;
     letter-spacing: 0.2px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 }
 
 .btn-success:focus {
@@ -326,46 +328,52 @@ a:hover, a:active, a:focus {
 
 .main-home {
   background: url('../images/index.jpg') no-repeat;
-  height: 80vh;
-}
-
-.main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
+  height: 100vh;
 }
 
 .main-backdrop {
   background: url('../images/backdrop.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
 .main-genocide {
   background: url('../images/genocide.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
 .main-opening {
   background: url('../images/open.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
 .main-education {
   background: url('../images/ed.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
 .main-economic {
   background: url('../images/economic.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
 .main-cultural {
   background: url('../images/cultural.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
 }
 
-.main-pysch {
+.main-psych {
   background: url('../images/psych.jpg') no-repeat;
-	  height: 60vh;
+	  height: 90vh;
+}
+
+.main-what {
+  background: url('../images/what.jpg') no-repeat;
+	  height: 90vh;
+}
+
+.main-ten {
+  background: url('../images/ten.png') no-repeat;
+	  height: 90vh;
 }
 
 .main-gallery {
